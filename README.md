@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Project Versions information
 
-Angular CLI: 6.2.9
+Angular CLI: 6.2.9 <br>
 Node:12.6.0
 rxjs:6.2.2
 typescript:2.9.2
