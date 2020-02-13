@@ -9,12 +9,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Project Versions information
 
 Angular CLI: 6.2.9 <br>
-Node:12.6.0
-rxjs:6.2.2
-typescript:2.9.2
-webpack:4.16.4
-@angular/cdk: 6.2.1
-@angular/cli:6.2.9
+Node:12.6.0<br>
+rxjs:6.2.2<br>
+typescript:2.9.2<br>
+webpack:4.16.4<br>
+@angular/cdk: 6.2.1<br>
+@angular/cli:6.2.9<br>
 @angular/material: 6.2.1
 
 ## Code scaffolding
