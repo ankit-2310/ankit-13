@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-
+import {MatDialogModule} from '@angular/material/dialog';
 import {
   MatButtonModule,
   MatFormFieldModule,
@@ -12,10 +12,12 @@ import { MatTableModule } from '@angular/material'
 
 
 import { AppComponent } from './app.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +26,10 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,DialogComponent]
 })
 export class AppModule { }

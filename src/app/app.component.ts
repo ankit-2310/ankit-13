@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
+import {MatDialog} from '@angular/material/dialog';
+import {DialogComponent} from './dialog/dialog.component';
 
 export interface PeriodicElement {
   name: string;
@@ -33,6 +35,20 @@ export class AppComponent {
   title = 'ankit13';
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(data): void {
+    const dialogRef = this.dialog.open(DialogComponent, {
+      width: '250px',
+      data: data
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      
+    });
+  }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
